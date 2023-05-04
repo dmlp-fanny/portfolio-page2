@@ -1,0 +1,23 @@
+// Section 2 - Banner
+header {
+    background-image: url(../img/bg.jpg);
+    background-color: $color_dark;
+    background-size: cover;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    section {
+        color: #b0d0d3;
+        font-size: 2rem;
+        font-family: "Orbitron";
+
+        span {
+            color: #1d7874;
+            font-weight: 700;
+            text-decoration: underline 3px #b0d0d3;
+            text-underline-offset: 3px;
+        }
+    }
+}

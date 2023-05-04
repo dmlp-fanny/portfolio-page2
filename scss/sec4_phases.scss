@@ -1,0 +1,43 @@
+// Section 4 - the phases
+.phases {
+  background-color: $color_dark;
+  color: $color_neutral;
+  &__container {
+    margin: 0 auto;
+    padding: 0 3rem 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__items {
+    padding: 0 1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    color: $color_green;
+  }
+}
+@media (min-width: 768px) {
+  .phases {
+    &__container {
+      flex-direction: row;
+      min-width: 20%;
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .semi-circle {
+    width: 7rem;
+    height: 3.5rem;
+    background-color: $color_neutral;
+    border-radius: 0 0 3.5rem 3.5rem;
+  }
+}

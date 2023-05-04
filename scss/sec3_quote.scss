@@ -1,0 +1,10 @@
+// Section 3 - the quote
+.quote {
+    background-color: $color_neutral;
+    color: black;
+
+    &__container {
+        margin: 0 auto;
+        padding: 3rem;
+    }
+}

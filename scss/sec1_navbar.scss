@@ -1,0 +1,65 @@
+@import url(style.scss);
+
+// Section 1 - Navbar
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 2.5rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+
+    .mylogo {
+        width: 20%;
+        text-align: center;
+        color: #1d7874;
+        font-family: "Orbitron";
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .menu {
+        padding: 2%;
+
+        img {
+            width: 1.75rem;
+            height: 1rem;
+        }
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .navbar {
+            flex: 1;
+            text-transform: uppercase;
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: space-between;
+
+            a {
+                background-color: #0a2342;
+                color: whitesmoke;
+                font-size: 1rem;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    background-color: #1d7874;
+                }
+            }
+        }
+
+        .menu {
+            display: none;
+        }
+    }
+}

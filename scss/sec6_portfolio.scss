@@ -1,0 +1,65 @@
+// Section 6 - the portfolio
+.portfolio {
+    background-color: #1d7874;
+}
+
+.portfolio__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.portfolio__items {
+    background-color: whitesmoke;
+    min-width: 30%;
+    height: 150px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio__items:hover {
+    background-color: #0a2342;
+}
+
+.portfolio__itemss {
+    background-color: lightgrey;
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    height: 48%;
+    overflow: hidden;
+}
+
+.portfolio__itemss:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__itemss img {
+    width: 40%;
+}
+
+#portfolio h2 {
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.itemss__techstack {
+    font-weight: bold;
+    text-align: left;
+    font-size: 0.75rem;
+}
+
+.explorebutton {
+    background-color: #1d7874;
+    color: whitesmoke;
+    padding: 0 3rem;
+    font-size: 0.75rem;
+    text-decoration: none;
+    border-radius: 2px;
+    box-shadow: 2.5px 2.5px 5px #0a2342;
+}
