@@ -2,12 +2,326 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linked Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/favi.png" />
+    <title>My Portfolio</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <nav>
+      <section class="mylogo">
+        <img src="img/mylogo.png" alt="Constellation - my logo" /> DMLP
+      </section>
+      <section class="navbar">
+        <a href="#">Home</a>
+        <a href="#myskills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#contact">Contact</a>
+      </section>
+    </nav>
+    <header>
+      <section>
+        Hi, I am <span>DMLP Fanny</span>. <br />I'm a Full-stack Wannabe.
+      </section>
+    </header>
+    <main>
+      <div class="workflow">
+        Lorem ipsum dolor sit amet
+        <strong>consectetur adipisicing elit.</strong> Magnam odio ut quasi,
+        quam, quos deleniti a impedit sit provident incidunt, aliquid illum
+        exercitationem ipsam consequatur eius
+        <strong>veniam porro inventore vero!</strong>
+      </div>
+
+      <div class="phases_container">
+        <div class="phases__items">
+          <div class="semi-circle"></div>
+          <h3>Discover</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            quod unde a suscipit, quos delectus sint aliquid iste? Impedit
+            consectetur et laudantium labore
+          </p>
+        </div>
+        <div class="phases__items">
+          <div class="semi-circle"></div>
+          <h3>Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            quod unde a suscipit, quos delectus sint aliquid iste? Impedit
+            consectetur et laudantium labore
+          </p>
+        </div>
+        <div class="phases__items">
+          <div class="semi-circle"></div>
+          <h3>Deploy</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            quod unde a suscipit, quos delectus sint aliquid iste? Impedit
+            consectetur et laudantium labore
+          </p>
+        </div>
+        <div class="phases__items">
+          <div class="semi-circle"></div>
+          <h3>Be Ready</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            quod unde a suscipit, quos delectus sint aliquid iste? Impedit
+            consectetur et laudantium labore
+          </p>
+        </div>
+      </div>
+
+      <div id="myskills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+          <div class="skills__name">HTML</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue html">60%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">CSS, Sass</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue css">50%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">JavaScript</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue js">1%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">React</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue react">0%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">jQuery</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue jquery">0%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">PHP</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue php">1%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">Laravel</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue laravel">0%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">UX</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue ux">0%</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio__container">
+          <div class="portfolio__container_row">
+            <div class="portfolio__items">
+              <div class="portfolio__itemss img">
+                <img src="img/empty_bg.svg" alt="" />
+              </div>
+              <div class="portfolio__itemss text">
+                <section class="itemss__description">
+                  Ok, what did I create here <br />
+                  wanna know? <br />
+                  read more <br />
+                </section>
+                <section class="itemss__techstack">tech stack:</section>
+              </div>
+            </div>
+            <div class="portfolio__items">
+              <div class="portfolio__itemss img">
+                <img src="img/empty_bg.svg" alt="" />
+              </div>
+              <div class="portfolio__itemss text">
+                <section class="itemss__description">
+                  Ok, what did I create here <br />
+                  wanna know? <br />
+                  read more <br />
+                </section>
+                <section class="itemss__techstack">tech stack:</section>
+              </div>
+            </div>
+            <div class="portfolio__items">
+              <div class="portfolio__itemss img">
+                <img src="img/empty_bg.svg" alt="" />
+              </div>
+              <div class="portfolio__itemss text">
+                <section class="itemss__description">
+                  Ok, what did I create here <br />
+                  wanna know? <br />
+                  read more <br />
+                </section>
+                <section class="itemss__techstack">tech stack:</section>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__container_row">
+            <div class="portfolio__items">
+              <div class="portfolio__itemss img">
+                <img src="img/empty_bg.svg" alt="" />
+              </div>
+              <div class="portfolio__itemss text">
+                <section class="itemss__description">
+                  Ok, what did I create here <br />
+                  wanna know? <br />
+                  read more <br />
+                </section>
+                <section class="itemss__techstack">tech stack:</section>
+              </div>
+            </div>
+            <div class="portfolio__items">
+              <div class="portfolio__itemss img">
+                <img src="img/empty_bg.svg" alt="" />
+              </div>
+              <div class="portfolio__itemss text">
+                <section class="itemss__description">
+                  Ok, what did I create here <br />
+                  wanna know? <br />
+                  read more <br />
+                </section>
+                <section class="itemss__techstack">tech stack:</section>
+              </div>
+            </div>
+            <div class="portfolio__items">
+              <div class="portfolio__itemss img">
+                <img src="img/empty_bg.svg" alt="" />
+              </div>
+              <div class="portfolio__itemss text">
+                <section class="itemss__description">
+                  Ok, what did I create here <br />
+                  wanna know? <br />
+                  read more <br />
+                </section>
+                <section><a href="#" class="explorebutton">Explore</a></section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme_container">
+          <div class="aboutme_items"><img src="img/profile.jpg" alt="" /></div>
+          <div class="aboutme_items">
+            <p>
+              <strong>Lorem, ipsum dolor sit </strong>amet consectetur
+              adipisicing elit. Inventore veritatis unde qui ab aperiam nisi,
+              voluptatibus laudantium officia facere ducimus modi porro sit
+              commodi vitae, excepturi,<strong>
+                saepe ratione quibusdam! Fuga!</strong
+              >
+            </p>
+            <p class="underline">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p>
+              Inventore veritatis unde qui ab aperiam nisi, voluptatibus
+              laudantium officia facere ducimus modi porro sit commodi vitae,
+              excepturi, saepe ratione quibusdam! Fuga!
+            </p>
+            <p class="biggertext">Lets get in touch.</p>
+            <a href="#" class="contactmebutton">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="socialmedia">
+        <h3>Find me here</h3>
+        <div class="socialmedia__container">
+          <div class="sm__items">
+            <img src="img/github.svg" alt="Github logo" />
+          </div>
+          <div class="sm__items">
+            <img src="img/linkedin.svg" alt="Linkedin logo" />
+          </div>
+          <div class="sm__items">
+            <img src="img/instagram.svg" alt="Instagram logo" />
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h2>Contact me</h2>
+        <form action="#" class="contact__container">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="First Name *"
+            required
+          /><input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Last Name *"
+            required
+          /><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email *"
+            required
+          /><input
+            type="number"
+            id="phone"
+            name="lastname"
+            placeholder="Phone Number"
+          />
+          <label for="message">My Message *</label
+          ><textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button>Send my message</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__message"><span>Nice to meet you</span></div>
+      <div class="footer__img">
+        <img src="img/github.svg" alt="Github logo" /><img
+          src="img/linkedin.svg"
+          alt="Linkedin logo"
+        /><img src="img/instagram.svg" alt="Instagram logo" />
+      </div>
+      <div class="footer__copyright">© 2023 Copyright by DMLP</div>
+    </footer>
   </body>
 </html>
