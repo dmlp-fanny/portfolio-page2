@@ -26,44 +26,54 @@ nav {
     display: flex;
     flex-direction: row;
     height: 2.5rem;
-}
-
-.mylogo {
-    width: 20%;
-    text-align: center;
-    overflow: hidden;
-    color: #1d7874;
-    padding-bottom: 0.5rem;
-    font-family: "Orbitron";
-}
-
-.mylogo img {
-    height: 100%;
-}
-
-.navbar {
-    flex: 1;
-    text-transform: uppercase;
-    display: flex;
-    width: 100%;
-    height: auto;
     justify-content: space-between;
-}
-
-.navbar a {
-    background-color: #0a2342;
-    color: whitesmoke;
-    font-size: 1rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.navbar a:hover {
-    background-color: #1d7874;
+    margin-bottom: 3rem;
+    .mylogo {
+        width: 20%;
+        text-align: center;
+        color: #1d7874;
+        font-family: "Orbitron";
+        img {
+            height: 100%;
+        }
+    }
+    .menu {       
+        padding: 2%;
+        img {
+            width: 1.75rem;
+            height: 1rem;
+        }
+    }
+    .navbar {
+       display: none;
+    }
+    @media (min-width: 768px) {
+        .navbar {
+            flex: 1;
+            text-transform: uppercase;
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: space-between;    
+            a {
+                background-color: #0a2342;
+                color: whitesmoke;
+                font-size: 1rem;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                &:hover {
+                    background-color: #1d7874;
+                }
+            }
+        }
+        .menu {
+            display: none;
+        }
+    }
 }
 
 // Section 2 - Banner
@@ -75,19 +85,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-header section {
-    color: #b0d0d3;
-    font-size: 2rem;
-    font-family: "Orbitron";
-}
-
-header > section > span {
-    color: #1d7874;
-    font-weight: 700;
-    text-decoration: underline 3px #b0d0d3;
-    text-underline-offset: 3px;
+    section {
+        color: #b0d0d3;
+        font-size: 2rem;
+        font-family: "Orbitron";
+        span {
+            color: #1d7874;
+            font-weight: 700;
+            text-decoration: underline 3px #b0d0d3;
+            text-underline-offset: 3px;
+        }
+    }
 }
 
 // Section 3 - the quote
@@ -144,4 +152,4 @@ header > section > span {
     }
 }
 
-
+// Section 5 - the skills
