@@ -1,0 +1,32 @@
+// Footer
+
+.footer__message {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #1d7874;
+    line-height: 0.1rem;
+    margin: 20px 0 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer__message span {
+    background-color: whitesmoke;
+    padding: 0 10px;
+}
+
+.footer__img {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__img img {
+    width: 10%;
+    opacity: 20%;
+}
+
+.footer__copyright {
+    font-size: 0.5rem;
+}

@@ -1,0 +1,20 @@
+/* Social Media */
+#socialmedia {
+    background-color: #b0d0d3;
+}
+
+.socialmedia__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#socialmedia h3 {
+    color: black;
+    text-transform: uppercase;
+}
+
+#socialmedia img {
+    width: 70%;
+    overflow: hidden;
+}
