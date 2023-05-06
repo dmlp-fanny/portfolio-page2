@@ -1,49 +1,47 @@
 // About me section 
-#aboutme h2 {
-    text-transform: uppercase;
-}
-
-.aboutme_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.aboutme_items:first-child {
-    background-color: #b0d0d3;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-}
-
-.aboutme_items:last-child {
-    flex: 1;
-    text-align: left;
-    padding-left: 2rem;
-}
-
-.aboutme_items img {
-    width: 100%;
-}
-
-.underline {
-    text-decoration: underline 4px #1d7874;
-    text-underline-offset: 4px;
-}
-
-.biggertext {
-    font-size: larger;
-    font-weight: bold;
-}
-
-.contactmebutton {
-    background-color: #1d7874;
-    color: whitesmoke;
-    padding: 0 2rem;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 2px;
-    box-shadow: 2.5px 2.5px 5px #0a2342;
+.aboutme {
+    background-color: $color_neutral;
+    margin: 0 auto;
+    padding: 3rem;
+    h2 {
+        text-transform: uppercase;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            background-color: $color_light;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        &_text {
+            flex: 1;
+            text-align: left;
+            padding-left: 2rem;
+            .underline {
+                    text-decoration: underline 4px #1d7874;
+                    text-underline-offset: 4px;
+            }
+            .biggertext {
+                font-size: larger;
+                font-weight: bold;
+            }
+            .contactmebutton {
+                background-color: #1d7874;
+                color: whitesmoke;
+                padding: 0 2rem;
+                font-size: 1rem;
+                text-decoration: none;
+                border-radius: 2px;
+                box-shadow: 2.5px 2.5px 5px #0a2342;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
 }
