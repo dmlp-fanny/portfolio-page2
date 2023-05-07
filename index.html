@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linked stylesheets -->
+    
+    <!-- Linked Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAADiklEQVR4nGNgGAVDEUxct025f/22yf///2dEl1t79nzb2jPnv6w5e76VZg6wi8ifbBuR/8A2rMAIXW7psZOflx457bXs2KlPNHMAAwMDI5eyE4blq86eVVly5OTr+fuOfl165OTLVefPSzPQCyzdf0ZkyZETN5ceOpUF4i85cqJsyeET5xbtvMBNc8tnbjrDNXfPoWNz9hyqRxafu/vQjLl7Dm1ZtWoVM80sX7VqFfPUzXs2TNm8ew6Gw86cYZ26Zc+eKVt2dxJtYM/KjZHdqzZHEK1+zdapPau3bK3fv58Fm3zvqh1Cvau33Gxftn5e6+LVMdhyDhz4ZtRb+GfVfvTLrvsAYjMQAG1L1ja2LVl3un7VKh586urnrCypm7PiTt3s5Zfq5qyIxmuoiLZ3BAgTsrxm9tKUujnL7lTOXiZOSG359EWF5VMX3SmfuvBS6ZRF+B1ACBT0zWkr6J39tXjC3NcVUxapEFJfP2UVT9mU+ReLJs1fUNg7O4oBXxQQBP//M2a1T/2a1TbdK6tt6hdi1Of1zFyZ2zNrAQOlIKN+mlhay6TNqY0T7iU19H9ObZr4NK1l0oS0mTNZcelJb55cl9486VjuxInsFFkeV93lFl/T/SSupmdiaH09G0gsun4iX1x1z9r4mu7D0VV9kuh6Yqu6/MF6qnrJLw3j6+s5wopaJ4YVtT4ILWy1x1TxnzG8uKU8vKjleVhhqyNMNLKoVSOsuOVFaGGLGbLqtWcuGuHNhsggMKNexz+77qJ/Vv0q78wKQQY8wDer3sMvu+6lf3Z9l192XbVfdv0Dv6z6JGQ10VWdRnFV3Q9jK7sm4zTILblCxTO54o5nSsVTj6TyN+4pFZEMRALXlGpFj+SK9x7JFSs9kiueYVHCyKvmOplPxVEZpyFOscXFjrHFS5xiClc4xRY0E2s5kv7bTrHFyxxji24xkAMsQrNUrENzn1qG5jy1Cs9FuPT/f8aaWcsmV89crkxIv1VoTiGKXlKBvndyAwgji2m4Jxhpu8Y90HaNxx1/1AKazrENIIwuDm2AUFCKEQkUrUMbQJhhoICksX8DCA+YAwS1PRtAmBIzQG2D9qXrV5HcEhLVclMR1PF6BsIgNrkO8EypXOWZWvnfI7ViJUkaeVVdinlUXZbwqLks5VVzLiLXAQwMocxcKk4rQTRJ2tiV7VW4lJxucyk73mLHV2KNguEEAKQvbdV5R1kzAAAAAElFTkSuQmCC" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/assets/index-fac8b896.css">
+  </head>
+  <body>
+    <!-- Section 1 - navbar -->
+
+    <nav>
+      <section class="mylogo">
+        <img src="data:image/png;base64,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" alt="Constellation - my logo" /> DMLP
+      </section>
+      <section class="navbar">
+        <a href="#">Home</a>
+        <a href="#myskills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#contact">Contact</a>
+      </section>
+      <div class="menu"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAqSURBVHgB7dBBDQAwCARBtkqa8+8JpCACHiQwEgZJDnzrEc/W4Q7L5h8mLxAG4srMAAQAAAAASUVORK5CYII=" alt="Menu Bar" /></div>
+    </nav>
+
+    <!-- Section 2 - banner -->
+
+    <header>
+      <section>
+        Hi, I am <span>DMLP Fanny</span>. <br />I'm a Full-stack Wannabe.
+      </section>
+    </header>
+    <main>
+      <!-- Section 3 - the quote -->
+
+      <div class="quote">
+        <div class="quote__container">
+          Lorem ipsum dolor sit amet
+          <strong>consectetur adipisicing elit.</strong> Magnam odio ut quasi,
+          quam, quos deleniti a impedit sit provident incidunt, aliquid illum
+          exercitationem ipsam consequatur eius
+          <strong>veniam porro inventore vero!</strong>
+        </div>
+      </div>
+
+      <!-- Section 4 - the phases -->
+
+      <div class="phases">
+        <div class="phases__container">
+          <div class="phases__items">
+            <div class="semi-circle"></div>
+            <h3>Discover</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum quod unde a suscipit, quos delectus sint aliquid iste?
+              Impedit consectetur et laudantium labore
+            </p>
+          </div>
+          <div class="phases__items">
+            <div class="semi-circle"></div>
+            <h3>Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum quod unde a suscipit, quos delectus sint aliquid iste?
+              Impedit consectetur et laudantium labore
+            </p>
+          </div>
+          <div class="phases__items">
+            <div class="semi-circle"></div>
+            <h3>Deploy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum quod unde a suscipit, quos delectus sint aliquid iste?
+              Impedit consectetur et laudantium labore
+            </p>
+          </div>
+          <div class="phases__items">
+            <div class="semi-circle"></div>
+            <h3>Be Ready</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatum quod unde a suscipit, quos delectus sint aliquid iste?
+              Impedit consectetur et laudantium labore
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5 - the skills -->
+      <div id="myskills" class="myskills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+          <div class="skills__name">HTML</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue html">60%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">CSS, Sass</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue css">50%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">JavaScript</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue js">1%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">React</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue react">0%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">jQuery</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue jquery">0%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">PHP</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue php">1%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">Laravel</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue laravel">0%</div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="skills__name">UX</div>
+          <div class="skills__progress">
+            <div class="skills__progress_line"></div>
+            <div class="skills__progress_blue ux">0%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 6 - the portfolio  -->
+      <div id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio__container">
+          <div class="portfolio__container-cards">
+            <img src="/assets/empty_bg-c252c5c1.svg" alt="" />
+            <div class="portfolio__container-cards_text">
+              <section class="description">
+                Ok, what did I create here <br />
+                wanna know? <br />
+                read more <br />
+              </section>
+              <section class="techstack">tech stack:</section>
+            </div>
+          </div>
+          <div class="portfolio__container-cards">
+            <img src="/assets/empty_bg-c252c5c1.svg" alt="" />
+            <div class="portfolio__container-cards_text">
+              <section class="description">
+                Ok, what did I create here <br />
+                wanna know? <br />
+                read more <br />
+              </section>
+              <section class="techstack">tech stack:</section>
+            </div>
+          </div>
+          <div class="portfolio__container-cards">
+            <img src="/assets/empty_bg-c252c5c1.svg" alt="" />
+            <div class="portfolio__container-cards_text">
+              <section class="description">
+                Ok, what did I create here <br />
+                wanna know? <br />
+                read more <br />
+              </section>
+              <section class="techstack">tech stack:</section>
+            </div>
+          </div>
+          <div class="portfolio__container-cards">
+            <img src="/assets/empty_bg-c252c5c1.svg" alt="" />
+            <div class="portfolio__container-cards_text">
+              <section class="description">
+                Ok, what did I create here <br />
+                wanna know? <br />
+                read more <br />
+              </section>
+              <section class="techstack">tech stack:</section>
+            </div>
+          </div>
+          <div class="portfolio__container-cards">
+            <img src="/assets/empty_bg-c252c5c1.svg" alt="" />
+            <div class="portfolio__container-cards_text">
+              <section class="description">
+                Ok, what did I create here <br />
+                wanna know? <br />
+                read more <br />
+              </section>
+              <section class="techstack">tech stack:</section>
+            </div>
+          </div>
+          <div class="portfolio__container-cards">
+            <img src="/assets/empty_bg-c252c5c1.svg" alt="" />
+            <div class="portfolio__container-cards_text">
+              <section class="description">
+                Ok, what did I create here <br />
+                wanna know? <br />
+                read more <br />
+              </section>
+              <section><a href="#" class="explorebutton">Explore</a></section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 7 - about me -->
+      <div id="aboutme" class="aboutme">
+        <h2>About me</h2>
+        <div class="aboutme__container">
+          <img src="/assets/profile-7af20eac.jpg" alt="Profile Picture" />
+          <div class="aboutme__container_text">
+            <p>
+              <strong>Lorem, ipsum dolor sit </strong>amet consectetur
+              adipisicing elit. Inventore veritatis unde qui ab aperiam nisi,
+              voluptatibus laudantium officia facere ducimus modi porro sit
+              commodi vitae, excepturi,<strong>
+                saepe ratione quibusdam! Fuga!</strong
+              >
+            </p>
+            <p class="underline">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p>
+              Inventore veritatis unde qui ab aperiam nisi, voluptatibus
+              laudantium officia facere ducimus modi porro sit commodi vitae,
+              excepturi, saepe ratione quibusdam! Fuga!
+            </p>
+            <p class="biggertext">Lets get in touch.</p>
+            <a href="#" class="contactmebutton">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 8 - Social Media  -->
+      <div id="socialmedia" class="socialmedia">
+        <h3>Find me here</h3>
+        <div class="socialmedia__container">
+          <img src="/assets/github-ddeefe89.svg" alt="Github logo" />
+          <img src="/assets/linkedin-77ba01e1.svg" alt="Linkedin logo" />
+          <img src="/assets/instagram-593208ec.svg" alt="Instagram logo" />
+        </div>
+      </div>
+
+      <!-- Section 9 - Contact  -->
+      <div id="contact" class="contact">
+        <h2>Contact me</h2>
+        <form action="#" class="contact__container">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="First Name *"
+            required
+          /><input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Last Name *"
+            required
+          /><input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email *"
+            required
+          /><input
+            type="number"
+            id="phone"
+            name="lastname"
+            placeholder="Phone Number"
+          />
+          <label for="message">My Message *</label
+          ><textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <button>Send my message</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Section 10 - Footer -->
+    <footer class="footer">
+      <div class="footer__message"><span>Nice to meet you</span></div>
+      <div class="footer__img">
+        <img src="/assets/github-ddeefe89.svg" alt="Github logo" /><img
+          src="/assets/linkedin-77ba01e1.svg"
+          alt="Linkedin logo"
+        /><img src="/assets/instagram-593208ec.svg" alt="Instagram logo" />
+      </div>
+      <div class="footer__copyright">© 2023 Copyright by DMLP</div>
+    </footer>
+  </body>
+</html>
